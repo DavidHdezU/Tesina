@@ -1,24 +1,31 @@
 \chapter{\bf{Introducción}}\label{cap:intro}
-\epigraph{``Frase opcional''
-}{\textit{Autor}}
+%\epigraph{``Frase opcional''
+%}{\textit{Autor}}
 
-Aquí va texto introductorio...
+%Como capitulo introductorio, se explicará y abordará de manera general la problemática que desembocó la motivación del trabajo, así como los objetivos a realizar para la implementación del proyecto, ejemplos de tecnologías desarrolladas durante la pandemia de COVID-19 para ayudar a llevar un control sobre los contagios.
+
+En este primer capítulo introductorio, se abordará de manera general la problemática que motivó la realización de este trabajo. Se explorará el contexto que llevó a la necesidad de mejorar los procesos de almacenamiento y análisis de datos en la Secretaría de Salud de la Ciudad de México (\textbf{SEDESA}).
+
+Además, se hablará de los objetivos  que orientan la implementación de este proyecto. Se proporcionarán ejemplos de tecnologías desarrolladas durante la pandemia de COVID-19 que han demostrado ser eficaces para el control de contagios y que sirven como referencia para el enfoque adoptado en este proyecto.
+
 
 \section{Planteamiento del Problema}\label{intro_mot}
 %Escribir que motivó el trabajo de investigación....
 %Cual es el problema que queremos abordar: En este caso sería el desarrollo de un tablero de datos con información agregada de pacientes.... aqui se puede mencionar las tecnologías que se van a utilizar para para el desarrollo. Hablar sobre la importancia de utilizar software open source debido a la falta de recursos para licencia por parte de la Secretaria de Salud (aqui también puedes mencionar que los recursos económicos durante tiempo de pandemia fue necesario utilizar el materiales, salarios de los médicos, etc.)
 
-La creación de una aplicación web destinada a la gestión de información hospitalaria por parte de la Secretaría de Salud de la Ciudad de México (\textbf{SEDESA}) surge como respuesta a la necesidad de modernizar los procesos de almacenamiento y análisis de datos para esta institución. La complejidad y volumen de la información manejada por la \textbf{SEDESA} demandan una herramienta eficiente que permite al personal la gestión interna de pacientes y seguimiento de métricas dentro de los hospitales.
+La creación de una aplicación web destinada a la gestión de información hospitalaria por parte de la Secretaría de Salud de la Ciudad de México (\textbf{SEDESA}) surge como respuesta a la necesidad de mejorar los procesos de almacenamiento y análisis de datos para esta institución. La complejidad y volumen de la información manejada por la \textbf{SEDESA} demandan una herramienta eficiente que permite al personal la gestión interna de pacientes y seguimiento de métricas dentro de los hospitales \cite{morales2019sistema}.
 
 El objetivo principal durante el proyecto, fue el desarrollo de un tablero de datos diseñado específicamente para proporcionar información clave sobre pacientes que habían contraído \textsc{COVID-19}.
-En dicho tablero se presentan diversas métricas relacionadas con el manejo de pacientes afectados por \textsc{COVID-19}, incluyendo datos sobre ingresos y egresos hospitalarios, defunciones causadas por la enfermedad y traslados entre diferentes centros de atención médica.\\
+En dicho tablero se presentan diversas métricas relacionadas con el manejo de pacientes afectados por \textsc{COVID-19}, incluyendo datos sobre ingresos y egresos hospitalarios, defunciones causadas por la enfermedad y traslados entre diferentes centros de atención médica.
 
-Para llevar a cabo el modulo del tablero de datos, se utilizaron tecnologías para la implementación de aplicaciones web qué se encuentran entre las más utilizadas en la actualidad en el mercado como lo son \texttt{React} y \texttt{Django}, el usarlas no sólo garantiza la eficiencia y la fiabilidad del sistema, sino que también permite la adaptabilidad continua a medida que se lanzan nuevas versiones.\\s
-La elección de utilizar software \textit{Open Source} fue fundamental en el desarrollo de esta aplicación, dada la situación económica y la prioridad de asignar recursos a áreas de mayor importancia por parte \textbf{SEDESA}, como el material médico, salarios del personal sanitario y otros aspectos esenciales durante la crisis sanitaria del \textsc{COVID-19}.\\
+Para llevar a cabo el modulo del tablero de datos, se utilizaron tecnologías para la implementación de aplicaciones web que se encuentran entre las más utilizadas en la actualidad en el mercado como lo son \texttt{React} y \texttt{Django}, el usarlas no sólo garantiza la eficiencia y la fiabilidad del sistema, sino que también permite la adaptabilidad continua a medida que se lanzan nuevas versiones.
+
+La elección de utilizar software \textit{Open Source} \footnote{El software \textit{Open Source} es un software que se distribuye con su código fuente, lo que permite su uso, modificación y distribución con sus derechos originales.} fue fundamental en el desarrollo de esta aplicación, dada la situación económica y la prioridad de asignar recursos a áreas de mayor importancia por parte \textbf{SEDESA}, como el material médico, salarios del personal sanitario y otros aspectos esenciales durante la crisis sanitaria del \textsc{COVID-19}.
+
 De igual manera, esta decisión a corto, mediano y largo plazo permitirá la colaboración en el desarrollo tecnológico. El nuevo personal que contribuya al desarrollo puede mejorar constantemente la aplicación, lo cual permite así una evolución continua y adaptación a las necesidades cambiantes de la Secretaría de Salud.
 
 \section{Objetivos}\label{intro_obj}
-El objetivo general de este trabajo consiste en el desarrollo de un módulo de la aplicación web dónde se muestre un tablero con diferentes gráficas que presentan métricas relacionadas a pacientes hospitalizados que estuvieron contagiados de \textsc{COVID-19}.\\
+El objetivo general de este trabajo consiste en el desarrollo de un módulo de la aplicación web dónde se muestre un tablero con diferentes gráficas que presentan métricas relacionadas a pacientes hospitalizados que estuvieron contagiados de \textsc{COVID-19}.
 
 Como en toda aplicación web, esta se compone por 2 partes: \textbf{Frontend} y \textbf{Backend}.
 
@@ -28,6 +35,7 @@ Por lo tanto, podemos descomponer los objetivos en los que conciernen al \textbf
     \item \texttt{Backend}
         \begin{itemize}
             \item Desarrollo de endpoints para obtener los datos necesarios para los componentes de visualización del \textbf{Frontend}.
+            \item El diseño y la implementación de consultas SQL que cumplen con los requisitos de información especificados.
         \end{itemize}
     \item \texttt{Frontend}
         \begin{itemize}
@@ -42,37 +50,33 @@ Por lo tanto, podemos descomponer los objetivos en los que conciernen al \textbf
 %Durante la pandemia, se comenzó a requerir y desarrollar herramientas eficientes para recopilar, procesar y analizar datos relacionados con la salud pública. 
 
 
-El surgimiento de la enfermedad \textsc{COVID-19}, causada por el virus \textsc{SARS-CoV-2}, ha representado un episodio de gran trascendencia en los últimos años al desencadenar una crisis de alcance global. Su propagación rápida, gran capacidad de mutación y la diversidad de manifestaciones clínicas, que van desde síntomas leves hasta casos graves, han desafiado a las comunidades globales y resaltado la necesidad de respuestas conjuntas a nivel internacional.\\
-La mayoría de los países han aplicado cierres y medidas sanitarias para evitar su propagación. Sin embargo, a pesar de que estas medidas han funcionado de una manera racional, un bloqueo prolongado es insostenible. Por ello, la opinión generalizada es que las pruebas y el rastreo de virus son un gran apoyo para facilitar las medidas de bloqueo.\\
+El surgimiento de la enfermedad \textsc{COVID-19}, causada por el virus \textsc{SARS-CoV-2}, ha representado un episodio de gran trascendencia en los últimos años al desencadenar una crisis de alcance global. Su propagación rápida, gran capacidad de mutación y la diversidad de manifestaciones clínicas, que van desde síntomas leves hasta casos graves, han desafiado a las comunidades globales y resaltado la necesidad de respuestas conjuntas a nivel internacional.
 
-Hoy en día, se han desarrollado diversas aplicaciones y software para poder realizar análisis de datos sobre el impacto de la pandemia en diferentes ámbitos, como el sistema sanitario, los sistemas de transporte, el sistema educativo, la prestación de servicios gubernamentales, las empresas farmacéuticas, la fabricación, las industrias de software y las empresas multinacionales.\\
+La mayoría de los países han aplicado cierres y medidas sanitarias para evitar su propagación. Sin embargo, a pesar de que estas medidas han funcionado de una manera racional, un bloqueo prolongado es insostenible. Por ello, la opinión generalizada es que las pruebas y el rastreo de virus son un gran apoyo para facilitar las medidas de bloqueo.
 
-El volumen de datos que se ha generado en todos los ámbitos anteriormente mencionado es de gran tamaño, estos son generados principalmente fuentes, como la Organización Mundial de la Salud (\textbf{OMS}), redes sociales, hospitales públicos y privados, pacientes e instituciones académicas, que necesitan un mecanismo eficaz de análisis de datos para gestionar estos datos de forma eficiente. Lo cual ha conllevado al desarrollo de mecanismos que permitan realizar un manejo de datos a baja, mediana y gran escala, dependiendo de las necesidades de la entidad que haya pedido el desarrollo del sistema.\\
-Por ejemplo, \href{https://dhis2.org/covid-19/}{DHIS2} es un aplicación web para la recopilación, gestión y análisis de datos relacionados a la salud. En cuanto a su uso que concierne al \textsc{COVID-19}, incluye herramientas para la aceleración de la detección de casos, la información sobre las medidas de respuesta y la supervisión de la distribución equitativa de las vacunas. En la actualidad, \textsc{DHIS2} es la mayor plataforma de sistemas de gestión de la información sanitaria del mundo, utilizada por ministerios de sanidad de 80 países.\\
+Hoy en día, se han desarrollado diversas aplicaciones y software para poder realizar análisis de datos sobre el impacto de la pandemia en diferentes ámbitos, como el sistema sanitario, los sistemas de transporte, el sistema educativo, la prestación de servicios gubernamentales, las empresas farmacéuticas, la fabricación, las industrias de software y las empresas multinacionales \cite{ayaad2019role} \cite{delrosario2021procesamiento}.
 
-De igual manera, existen diversas aplicaciones como en la que se trabajó que son para manejo de datos más privados o un volumen de datos menos pesado.\\
+El volumen de datos que se ha generado en todos los ámbitos anteriormente mencionado es de gran tamaño, estos son generados principalmente fuentes, como la Organización Mundial de la Salud (\textbf{OMS}), redes sociales, hospitales públicos y privados, pacientes e instituciones académicas, que necesitan un mecanismo eficaz de análisis de datos para gestionar estos datos de forma eficiente. Lo cual ha conllevado al desarrollo de mecanismos que permitan realizar un manejo de datos a baja, mediana y gran escala, dependiendo de las necesidades de la entidad que haya pedido el desarrollo del sistema \cite{fan2023accessibility}.
+
+Por ejemplo, \textbf{DHIS2} \footnote{Link donde se puede consultar \textbf{DHIS2}: https://dhis2.org/covid-19/} es un aplicación web para la recopilación, gestión y análisis de datos relacionados a la salud. En cuanto a su uso que concierne al \textsc{COVID-19}, incluye herramientas para la aceleración de la detección de casos, la información sobre las medidas de respuesta y la supervisión de la distribución equitativa de las vacunas. En la actualidad, \textsc{DHIS2} es la mayor plataforma de sistemas de gestión de la información sanitaria del mundo, utilizada por ministerios de sanidad de 80 países.
+
+De igual manera, existen diversas aplicaciones y tableros como en la que se trabajó, las cuales son para manejo de datos más privados o un volumen de datos menos pesado. Un ejemplo a gran escala, son los tableros de datos implementados por el Mtro. Manuel Antonio Mojica Baltodano en Power BI por que muestran el impacto del COVID-19 tanto en América Latina como en el resto del mundo \cite{mojica2020tableros}. De igual manera, existen tableros enfocados en zonas más especificas como el tablero de datos desarrollado por investigadores de la Pontificia Universidad Católica de Chile, enfocado en la población atendida en los establecimientos de salud de Atención Primaria de la Corporación Municipal de Viña del Mar, entre los años 2021 y 2022~\cite{gomez2023analisis}.
 
 En conclusión, el \textsc{COVID-19} ha puesto de manifiesto la importancia de contar con herramientas tecnológicas robustas y flexibles para analizar y gestionar datos en diferentes escalas y contextos. La diversidad de aplicaciones, desde plataformas a gran escala como \textsc{DHIS2} hasta soluciones más específicas, indica la necesidad de adaptarse a la complejidad de la información generada durante crisis sanitarias.
 
-
-
 \section{Contribución}\label{intro_cont}
-
-
-Las contribuciones de este trabajo se enfocaron en el proceso de desarrollo de un tablero de datos especializado para la gestión de pacientes con \textsc{COVID-19}, construido a partir de un mockup proporcionado por \textsc{SEDESA}. 
+Las contribuciones de este trabajo se enfocaron en el proceso de desarrollo de un tablero de datos especializado para la gestión de pacientes con \textsc{COVID-19}, construido a partir de un \textit{mockup} \footnote{Un \textit{mockup} es una visualización o diseño de una aplicación, página web o producto que ilustra el aspecto que podría tener el resultado final.} proporcionado por \textsc{SEDESA}. 
 
 \begin{enumerate}
-    \item \textbf{Transformación de Mockup a Realidad:} Se está llevando a cabo la traducción del mockup proporcionado. Este proceso forma parte del frontend y actualmente se está trabajando en la parte visual del tablero. Utilizando la tecnología \texttt{ReactJS}, se están implementando componentes interactivos que se espera reflejen con precisión la estructura y el diseño del mockup.
+    \item \textbf{Transformación de \textit{Mockup} a Realidad:} Se está llevando a cabo la traducción del \textit{mockup} proporcionado. Este proceso forma parte del \textit{frontend} y actualmente se está trabajando en la parte visual del tablero. Utilizando la tecnología \texttt{ReactJS}, se están implementando componentes interactivos que se espera reflejen con precisión la estructura y el diseño del \textit{mockup}.
 
     
-    \item \textbf{Integración con el Backend:} Se desarrollaron endpoints específicos en el backend para obtener los datos necesarios para los componentes de visualización en el frontend. Esta integración en desarrollo busca garantizar la obtención eficiente de datos, permitiendo que el tablero se mantenga actualizado y refleje con precisión la información más reciente sobre pacientes y métricas asociadas.
+    \item \textbf{Integración con el \textit{Backend}:} Se desarrollaron \textit{endpoints} específicos en el \textit{backend} para obtener los datos necesarios para los componentes de visualización en el \textit{frontend}. Esta integración en desarrollo busca garantizar la obtención eficiente de datos, permitiendo que el tablero se mantenga actualizado y refleje con precisión la información más reciente sobre pacientes y métricas asociadas.
     
     \item \textbf{Flexibilidad para Mejoras Continuas:} La implementación en desarrollo, al estar basada en tecnologías \textit{Open Source}, busca proporcionar no solo para las necesidades actuales, sino también una base sólida para futuras mejoras y adaptaciones.
 \end{enumerate}
 
-En resumen, la contribución principal de esta tesina está enfocada en el proceso de desarrollo de un tablero de datos basado en un mockup previamente proporcionado, con la finalidad de proporcionar una herramienta para la gestión de información hospitalaria de \textbf{SEDESA} relacionada con pacientes afectados por COVID-19.
-
-
+En resumen, la contribución principal de este proyecto está enfocada en el proceso de desarrollo de un tablero de datos basado en un \textit{mockup} previamente proporcionado, con la finalidad de proporcionar una herramienta para la gestión de información hospitalaria de \textbf{SEDESA} relacionada con pacientes afectados por COVID-19.
 
 %{\large \bf{Logros}}\\
 %\section{Logros}
@@ -82,20 +86,20 @@ En resumen, la contribución principal de esta tesina está enfocada en el proce
 %Desarrollar un modelo que aplique las técnicas de transferencia de conocimiento a la tarea de perfilado de autor
 
 %{\large \bf{Organización de  perla Tesis}}\ \
-\section {Organización de la tesis}\label{intro_org}
+\section {Organización del documento}\label{intro_org}
 %\index{organización}
 
-A continuación se describen los capítulos que componen esta tesis:
+A continuación se describen los capítulos que componen este documento:
 
 \begin{enumerate}
     \item \textbf{Marco Teórico}\\
-    En este capítulo se describen conceptos y términos que se utilizarán en el desarrollo de esta tesis como lo son \texttt{PostegreSQL, Django} y \texttt{ReactJS}.
+    En este capítulo se describen conceptos y términos que se utilizarán en el desarrollo de este proyecto como lo son \texttt{PostegreSQL, Django} y \texttt{ReactJS}.
 
     \item \textbf{Estado del arte}\\
     En este capitulo se menciona que se está utilizando hoy en día en la industria para implementar tableros de datos. También, se habla del software \textit{Open Source} y de paga, así como un comparación entre ellos. 
 
     \item \textbf{Metodología propuesta}\\
-    En este capítulo se describe el marco metodológico de este trabajo de tesis, cómo funciona la conexión entra la base de datos, el backend y frontend.
+    En este capítulo se describe el marco metodológico de este trabajo de investigación, cómo funciona la conexión entra la base de datos, el \textit{backend} y \textit{frontend}.
 
     \item \textbf{Construcción final del tablero de información de pacientes COVID-19}\\
     En este capítulo se explica a detalle como funciona el tablero, se describen los parámetros que recibe para el despliegue de las gráficas en cada una de las secciones.

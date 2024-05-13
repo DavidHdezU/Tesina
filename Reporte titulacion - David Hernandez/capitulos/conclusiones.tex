@@ -1,32 +1,42 @@
 \chapter{Conclusiones y trabajo futuro}\label{cap:conclusiones}
-\epigraph{``Frase''
-}{\textit{ Autor }}
 
-En éste capítulo se presentan las conclusiones finales del presente trabajo de tesis...
+
+En éste capítulo se presentan las conclusiones finales del presente trabajo, así como el trabajo a futuro que se debe y podría realizar para un desarrollo y mantenimiento continuo y adecuado del tablero de datos.\\
+Las conclusiones presentadas no sólo reflejan el estado actual del proyecto, sino que también delinean claramente los pasos a seguir para alcanzar los objetivos trazados.
 \section{Conclusiones finales}
 
-A partir de los resultados obtenidos, podemos contestar las preguntas de investigación que se plantearon al inicio de este trabajo de tesis. A continuación respondemos brevemente dichas preguntas:
+El trabajo realizado en este proyecto ha permitido a \textbf{SEDESA} poseer una nueva herramienta que le permitirá en el corto y largo plazo realizar un seguimiento de datos y métricas relacionados a pacientes contagiados con COVID-19. Entre los beneficios y alcances específicos de la herramienta, podemos destacar:
+
 \begin{enumerate}
-  \item ¿Qué ....?
-  
+    \item  \textbf{Métricas clave:} Se incluyen indicadores relevantes relacionados a los ingresos, egresos, defunciones y traslados.
 
-\item ¿....?
+    \item  \textbf{Interactividad del tablero:} La herramienta características interactivas y fáciles de usar, que facilitan la comprensión y el análisis de los datos.
 
-\item ¿Qué ....?
-  
+    \item \textbf{Información para la toma de decisiones:} La herramienta proporciona información valiosa para la toma de decisiones relacionadas con la gestión pacientes con COVID-19, como la asignación de recursos, la implementación de medidas de control y la evaluación de su impacto.
 
+    \item \textbf{Identificación de áreas de riesgo:} La herramienta permite identificar áreas de mayor riesgo de contagio y vulnerabilidad, facilitando la focalización de las intervenciones y la atención médica.
 \end{enumerate}
-
-%Debido a que el perfil de los usuarios de \textit{Twitter} son de un nivel educativo y edad mayores que el de los usuarios de \textit{facebook} o \textit{instagram}, no se puede ver claramente.
 
 \section{Contribuciones del trabajo}
 
+Las diversas contribuciones realizadas durante el desarrollo de este proyecto son significativas tanto para la organización \textbf{SEDESA} como para el equipo de trabajo para que el módulo siga teniendo una evolución y mantenimiento constante y limpio.
+
 \begin{enumerate}
-    \item {....}
-    
+    \item \textbf{Creación de endpoints para el tablero de datos}: Se realizó una exploración de datos, así como se resolvieron dudas en cuanto al manejo de cierto datos para de esta manera poder crear un conjunto de \textit{endpoints} solidos y robustos para la obtención de datos y para su futura modificación, en caso de ser necesaria.
+
+    \item \textbf{Creación de componentes en ReactJS para la visualización de datos}: Se configuraron y sentaron las bases mediante diferentes componentes en \texttt{ReactJS} para usarse dentro del tablero de datos como lo son todos las gráficas creadas usando \texttt{AmCharts}. Además, también se creó cada uno de los componentes relacionados a cada una de las páginas del tablero y finalmente se configuró el componente que engloba a cada a uno de los componentes del tablero de datos.
 \end{enumerate}
 
 \section{Trabajo futuro}
+
+En lo relacionado al trabajo a llevarse a cabo en un futuro, principalmente es centrarse en mejor la calidad de los datos, así como tener el proceso ETL en continua operación para generar un volumen de datos mayor y a partir de esto lograr una mejor visualización de datos.\\
+
+Entre los aspectos a resolver se encuentran los siguientes:
+\begin{enumerate}
+    \item \textbf{Mejorar el aspecto estético del tablero de datos}: Se debe mejorar a través del uso de \texttt{CSS} y \texttt{HTML} para evitar el sobrelapamiento entre alguno de los componentes, así como darle un mejor diseño al tablero de datos.
+
+    \item \textbf{Resolver inconsistencias con datos}: En el caso particular de la gráfica pastel en la página 6 del tablero de datos que muestra el porcentaje de traslados por institución, como se mencionó en el capitulo anterior, aún no se cuenta con datos que puedan indicar a que institución pertenece cada uno de los hospitales. Por lo tanto, se está al tanto de que \textbf{SEDESA} proporcione nuevos datos para poder realizar el mapeo correcto.
+\end{enumerate}
 
 %%% Local Variables: 
 %%% mode: latex
